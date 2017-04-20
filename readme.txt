@@ -1,4 +1,4 @@
-Theme 'ComicBook_4:3' v0.0 - 04-18-2017 by TMNTturtlguy
+Theme 'ComicBook_4:3' v0.2 - 04-18-2017 by TMNTturtlguy
 Theme File Structure based on "carbon" Eric Hettervik (Rookervik) RYOKAI.DEVIANTART.COM
 Controller.svg from "carbon" Eric Hettervik (Rookervik) RYOKAI.DEVIANTART.COM
 Theme Concept based on images posted by: lipebello on Retropie.org.uk/forum
@@ -77,8 +77,10 @@ v0.1_4-19-17
 	launch sounds added to all sega systems
 	comic backgrounds updated for FB Alpha and all Mame systems to match the Arcade background for the time being.
 	Comic background updated for all sega systems to match sega genesis background for the time being.
-
-
+v0.2_4-20-17
+	Marquee conflict resolved
+		Added marquee back to video view in combic_book.xml and placed off screen.
+	
 License
 =======
 
