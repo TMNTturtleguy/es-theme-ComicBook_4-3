@@ -69,7 +69,14 @@ All other themes are set to work with a generic comic background to match the re
 
 Changelog
 =========
-
+v0.1_4-19-17
+	Marquee conflict resolved
+		Marquee removed from all systems except actual arcade cabinet systems
+		2nd System Logo removed from arcade cabinet systems
+		md_marquee deleted from comic_book.xml and moved to theme.xml
+	launch sounds added to all sega systems
+	comic backgrounds updated for FB Alpha and all Mame systems to match the Arcade background for the time being.
+	Comic background updated for all sega systems to match sega genesis background for the time being.
 
 
 License
