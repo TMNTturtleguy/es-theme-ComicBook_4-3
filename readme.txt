@@ -1,68 +1,128 @@
-Theme 'ComicBook_4:3' v0.2 - 04-18-2017 by TMNTturtlguy
-Theme File Structure based on "carbon" Eric Hettervik (Rookervik) RYOKAI.DEVIANTART.COM
+Theme 'ComicBook_4:3' v0.3 - 05-19-2017 by TMNTturtlguy
 Controller.svg from "carbon" Eric Hettervik (Rookervik) RYOKAI.DEVIANTART.COM
 Theme Concept based on images posted by: lipebello on Retropie.org.uk/forum
 For use with EmulationStation (http://www.emulationstation.org/)
 
 This theme is designed for 4:3 aspect ratio only.
 
-Theme is designed to be used with the slide transition.
+Thanks to new optimization and ES updates by @pjft there are no issues with performance.  VRAM should be set to 100.
 
-To run this theme smoothly you may need to change the VRAM up or Down.  On the most updates Emulation Station I run the theme on VRAM 70.  On the ES Build before maxSize I had to run at VRAM 120.
+See UserModInstruct.txt for instructions on available user modifications.
 
-v0.0 is designed on EmulationStation with maxSize for video and carasoul updates.  It also works on the udpated Screensaver OMX build by @pjft on Apr2017
+v0 is designed on EmulationStation with maxSize for video and carasoul updates.  It also works on the udpated Screensaver OMX build by @pjft on Apr2017
 -Video and images will work properly on both VLC and OMX players. 
--If running on an older of ES without maxSize.  Edit line 78 of comic_book.xml to <size>.
+-If running on an older of ES without maxSize.  Edit <maxSize> of comic_book.xml to <size>.
 
-Fonts:
-Users can use any font they would like with the theme. Just copy your font to /etc/emulationstation/themes/ComicBook/art folder. 
+Game Hacks Sytem views Available:
+- add the following to your roms foler and es_systems.cfg. The abbreviation letters should be the name of the rom folder and the name of the theme in the es_system.cfg Simply copy your roms from the regular system into tne roms folder and apply hacks.
+- gbh (game boy)
+- gbah (game boy advanced)
+- nesh (nes)
+- snesh (snes)
+- ggh (game gear) - not yet available on 4:3 version
+- genh (genesis)
 
-Gamelist Font Size:
-To change the font size of the Gamelist, open the "ComicBook.xml" with a text editor, look for the tag <gamelist> and find a tag inside called <fontSize>. The original value is 0.03. A small change makes a big difference in size. If you want smaller gamelist names, try 0.02. If you want larger, try 0.04. You can even go further by trying 0.015.
+Capcom Systems Available (copy your arcade system from es_systems.cfg)
+- cps1
+- cps2
+- cps3
+- capcom
 
-Colors:
-To change the colors open ComicBook.xml with a text editor. Choose a color and find it's hexidecimal value. Some examples are found in the carbon.xml file. Find all occurances of "8b0000" and replace them with your chosen color. Such as Orange: ef710b. Save the carbon.xml and exit. To change the color to another color after the first change, search for your old color, and replace it with a new one.
-
-Sounds:
-- To change the sound effect, replace /art/scroll.wav with what ever WAV file you would like. ComicBook theme will play what ever is called "scroll.wav" in the /art folder.
-- Some systems have launching sounds, for example NES plays a coin sound at launch.  To remove the launch sound, edit the theme.xml in the system folder within ComicBook Theme.
-- To add launch sound add this to the theme.xml for the system:
-		<sound name="launch">
-			<path>./art/XXXX.wav</path>
-		</sound>
-XXXX = the name of the .wav file.  Add the .wav file to the art forlder for the system.
+Example for es_systems.cfg - copied gba and modified <name>, <path>, <platform>, and <theme> to gbah
+<system>
+    <name>gbah</name>
+    <fullname>Game Boy Advance Hacks</fullname>
+    <path>/home/pi/RetroPie/roms/gbah</path>
+    <extension>.7z .gba .zip .7Z .GBA .ZIP</extension>
+    <command>/opt/retropie/supplementary/runcommand/runcommand.sh 0 _SYS_ gba %ROM%</command>
+    <platform>gbah</platform>
+    <theme>gbah</theme>
+  </system>
 
 The theme is designed for use with video preview.  
 -The detail (Video View) will play the preview video "md_video" in the large black box.
 -Scraped art "md_image" wil be displayed in the large black box if a video is not available.
 
 
-Original Systems in Theme:
+Systems in Theme:
+3DO
+AGS
+amiga
+amstrad pc
+apple 2
 Aracde
+atari 800
 Atari 2600
+atari 5200
 Atari 7800
+atari jaguar
+atari lynx
+atari st
+bbc micro
+c64
+capcom
+channel f
+coco (tandy)
+colecovision
+CPS I (cps1)
+CPS II (cps2)
+CPS III (cps3)
+daphne
 Dreamcast
-FB Alpha
+dragon 32
+Famicom
 GB
-GBC
+Game Boy Hacks
 GBA
+Game Boy Advance Hacks
+GBC
+game gear
+Game Gear Hacks
+Game and Watch
 Genesis
-Mame
-Mame-advmame
-Mame-Libretro
-Mame-mame4all
-Mega Drive
+intellisvion
+Kodi
+macintosh
+master system
+mega drive
+msdos
+msx
 N64
 NDS
+neo geo
 NES
-Neo Geo
-Ports
-PSX
+NES Hacks
+ngp
+ngpc
+odyssey2
+oric
+pc engine
+pce-cd
+ports
 PSP
+PSX
+residualVM
 Retropie (menu)
-ScummVM
-Steam
+saturn
+scummvm
+Sega 32X
+Sega CD
+Sega Genesis Hacks
+SG-1000
+steam
+stratagus
 SNES
+SNES Hacks
+Super Famicom
+Super Grafx
+Turbo Grafix 16
+Turbo Grafix CD
+vectrex
+videopac
+Virtual Boy
+wonderswan
+wonderswan color
+ZX Spectrum
 
 All other themes are set to work with a generic comic background to match the rest of the theme.  The system logo will be the standard logo from the Carbon Theme.  On the detailed view  They sytem logo will appear twice at the top of the screen.
 
@@ -77,10 +137,12 @@ v0.1_4-19-17
 	launch sounds added to all sega systems
 	comic backgrounds updated for FB Alpha and all Mame systems to match the Arcade background for the time being.
 	Comic background updated for all sega systems to match sega genesis background for the time being.
-v0.2_4-20-17
-	Marquee conflict resolved
-		Added marquee back to video view in combic_book.xml and placed off screen.
 	
+v0.3_5-19-17
+	Major update to all systems, added new systems, to many to list.  Basically a whole new theme.
+	Fully optimized
+
+
 License
 =======
 
