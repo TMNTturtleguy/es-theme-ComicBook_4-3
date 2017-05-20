@@ -30,7 +30,7 @@
 		
 		<image name="logo">
 			<path>./art/system.png</path>
-			<pos>0.266 0.086</pos>
+			<pos>0.266 0.082</pos>
 			<maxSize>0.460 0.126</maxSize>
 			<origin>0.5 0.5</origin>
 		</image>
@@ -45,17 +45,21 @@
 		
 		<image name="classic_logo" extra="true">
 			<path>./art/system 3.svg</path>
-			<pos>0.7 0.084</pos>
+			<pos>0.71 0.084</pos>
 			<maxSize>0.26 0.1</maxSize>
 			<origin>0.5 0.5</origin>
 		</image>
 		
 		<image name="comic_rip" extra="true">
-			<path>./../art/rip/scumm.png</path>
+			<path>./../art/rip/wario.png</path>
 			<pos>0.92 0.077</pos>
 			<maxSize>0.2 0.2</maxSize>
 			<origin>0.5 0.5</origin>
 		</image>
+		
+		<sound name="launch">
+			<path>./../art/wario.wav</path>
+		</sound>
 		
 	</view>
 
