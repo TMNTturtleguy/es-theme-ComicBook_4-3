@@ -1,4 +1,4 @@
-Theme 'ComicBook_4:3' v0.3 - 05-19-2017 by TMNTturtlguy
+Theme 'ComicBook_4:3' v0.4 - 05-21-2017 by TMNTturtlguy
 Controller.svg from "carbon" Eric Hettervik (Rookervik) RYOKAI.DEVIANTART.COM
 Theme Concept based on images posted by: lipebello on Retropie.org.uk/forum
 For use with EmulationStation (http://www.emulationstation.org/)
@@ -142,6 +142,8 @@ v0.3_5-19-17
 	Major update to all systems, added new systems, to many to list.  Basically a whole new theme.
 	Fully optimized
 
+v0.4 5-21-17
+	cleaned up folder structure.
 
 License
 =======
