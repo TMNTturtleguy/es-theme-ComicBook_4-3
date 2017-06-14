@@ -69,6 +69,14 @@
 	</view>
 
 	<view name="detailed">
+	
+		<image name="classic_logo" extra="True">
+			<path>./art/system 3.svg</path>
+			<pos>0.7 0.084</pos>
+			<maxSize>0.26 0.1</maxSize>
+			<origin>0.5 0.5</origin>
+		</image>
+		
 	</view>
 	
 </theme>
